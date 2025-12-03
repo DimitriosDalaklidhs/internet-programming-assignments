@@ -1,105 +1,58 @@
-# Internet Programming — Assignments 35–38
+Internet Programming — Coursework Assignments 35–38
 
-JavaScript exercises for the **“Programming on the Internet”** course at the University of Western Macedonia.  
-Includes solutions for assignments **35–38** and an HTML form demo for client-side validation.
+University of Western Macedonia
 
----
+This repository contains JavaScript solutions for assignments 35–38 from the Programming on the Internet course.
+It is published mainly to demonstrate:
 
-## Contents
+✔ Git/GitLab usage
 
-- `solution_35.js` — **Curried sum**
-  - Usage: `sum(1)(2)(3) == 6`
-- `solution_36.js` — **Custom error**
-  - `class FormatError extends SyntaxError` (supports `message`, `name`, `stack`)
-- `solution_37.js` — **Delay promise**
-  - `delay(ms)` returns a Promise that resolves after `ms` milliseconds
-- `solution_38.js` + `solution_38.html` — **Form validation**
-  - Validates: no empty fields, max 15 chars, numeric code, email pattern, password ≥ 9 and matches confirmation
-  - Open `solution_38.html` in a browser to test
-How to Use the Exercises
+✔ project organization
 
-This repository contains JavaScript solutions for assignments 35–38 from the Programming on the Internet course at the University of Western Macedonia.
-Each file is self-contained and demonstrates a different concept of modern JavaScript (currying, promises, custom errors, and form validation).
+✔ working with multi-file repositories
 
-Running the JavaScript Files
+✔ maintaining university coursework
 
-All .js files use ES module syntax. You can run them in two ways:
+Note:
+I am not a JavaScript developer.
+These files represent academic exercises only.
 
-1. In the browser
+Contents
+File	Description
+solution_35.js	Curried sum: sum(a)(b)(c) → returns total using closures & valueOf.
+solution_36.js	Custom error class extending SyntaxError.
+solution_37.js	Promise-based delay: delay(ms) resolves after ms milliseconds.
+solution_38.js	JavaScript for HTML form validation.
+solution_38.html	Demo form with client-side validation rules.
+Assignment Summaries
+Assignment 35 — Curried Sum
 
-Add a <script type="module"> tag in an HTML file:
-
-<script type="module" src="solution_35.js"></script>
-
-2. With Node.js
-
-Make sure you use a version that supports ES modules (Node ≥ 14).
-
-Run any file with:
-
-node solution_35.js
-
-Features Demonstrated
- Currying (Assignment 35)
-
-solution_35.js implements a curried sum() function that can be chained indefinitely and evaluated using valueOf.
+Implements a chained sum function using closures.
 
 Example:
 
 console.log(sum(1)(2)(3)); // 6
 
+Assignment 36 — Custom FormatError
 
-Demonstrates:
+Defines a custom error type extending SyntaxError.
 
-Closures
+Assignment 37 — Promise-based Delay
 
-Function chaining
+Implements a delay function that resolves asynchronously.
 
-Custom valueOf() behavior
+Assignment 38 — Form Validation Demo
 
- Custom Error Class (Assignment 36)
-
-solution_36.js defines a FormatError class extending SyntaxError.
-
-Features:
-
-Custom error name
-
-Inherits from a built-in error
-
-Captures stack trace
-
- Promise-based Delay (Assignment 37)
-
-solution_37.js implements delay(ms), returning a Promise that resolves after a given number of milliseconds.
-
-Example:
-
-delay(2000).then(() => console.log("Runs after 2 seconds"));
-
-
-Demonstrates:
-
-Promises
-
-Asynchronous timing
-
-Clean async control flow
-
- Client-Side Form Validation (Assignment 38)
-
-solution_38.html + solution_38.js include a live form with validation rules:
+HTML + JS form with checks for:
 
 required fields
 
-numeric code (≤ 15 chars)
+numeric code (≤15 chars)
 
-valid email format
+valid email pattern
 
 password length ≥ 9
 
 password confirmation
 
-Just open the HTML file:
-
-solution_38.html
+Open solution_38.html in a browser to test.
