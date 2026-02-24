@@ -1,4 +1,4 @@
-# Internet Programming — Assignments 35–38
+# Internet Programming, Assignments 35–38
 
 **Course:** Programming on the Internet  
 **Institution:** University of Western Macedonia  
